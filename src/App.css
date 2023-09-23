@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.default-theme {
+  --drk-blue: #1A202C;
+  --borderGrey: #5e6064;
+  --md-blue: #223251;
+  --lt-drk-blue: #16426e;
+  --text-grey: #A0AEC0;
+  --font-color: var(--white);
+  background-color: var(--drk-blue);
+  transition:all 0.3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.light-theme {
+  --drk-blue: #ededed;
+  --borderGrey: #5e6064;
+  --md-blue: #e0e0e0;
+  --lt-drk-blue: #ededed;
+  --text-grey: #a6b3c4;
+  --font-color: var(--black);
+  background-color: var(--drk-blue);
+  transition:all 0.3s;
+
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-container {
+  color: var(--font-color);
+  letter-spacing: 0.005em;
+  width: 80%;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+@media screen and (max-width:550px) {
+  .App-container  {
+    width: 95%;
   }
 }
