@@ -5,7 +5,7 @@ The objective of this assignment is to create a language-learning app that
 helps users improve their language proficiency through interactive exercises.
 
 
-## **How to install and run locally ?**
+## **How to install and run locally**
 
 ```
 $ git clone https://github.com/shahvezahmad/language-learning-task.git
@@ -15,7 +15,7 @@ $ npm install firebase
 $ npm start
 ```
 
-## Features ?
+## Features 
 
 1. Home With Category
 2. Authentication
@@ -39,4 +39,28 @@ $ npm start
 - React with Typescript 
 - Firebase for storing data ( user and result data )
 - React Context API + useReducer
-- React Router for routing different pages 
+- React Router for routing different pages
+
+## Features 
+
+<div align="center">
+  <img src="screenshots/Home-dark.png" height="400" width="800" />
+</div>
+<div align="center">
+  <img src="screenshots/Home-light.png" height="400" width="800" />
+</div>
+<div align="center">
+  <img src="screenshots/category.png" height="400" width="800" />
+</div>
+<div align="center">
+  <img src="screenshots/dashboard.png" height="400" width="800" />
+</div>
+<div align="center">
+  <img src="screenshots/rules.png" height="400" width="800" />
+</div>
+<div align="center">
+  <img src="screenshots/result.png" height="400" width="800" />
+</div>
+<div align="center">
+  <img src="screenshots/responsive.png" height="700" width="400" />
+</div>
