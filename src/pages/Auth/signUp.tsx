@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/auth-context";
+import { useQuiz } from "../../context/quiz-context";
 import "./Auth.css";
 
 export function SignUp() {
@@ -12,6 +13,7 @@ export function SignUp() {
   };
   const [form, setForm] = useState(signUp);
   const { signUpUser, token } = useAuth();
+  const { setLoader } = useQuiz();
   const navigate = useNavigate();
 
   const signUpHandler = async () => {
@@ -20,7 +22,13 @@ export function SignUp() {
     setForm(signUp);
   };
 
-
+  if (token) {
+    setLoader(true);
+    setTimeout(() => {
+      setLoader(false);
+      navigate("/");
+    }, 1000);
+  }
   return (
     <div className="auth-container flex-center">
       <div className="auth-main-container flex-center">

@@ -1,2 +1,8 @@
+export { Home } from "./Home/Home"
+export { Rule } from "./Rule/Rule"
 export { SignIn } from "./Auth/signIn"
 export { SignUp } from "./Auth/signUp"
+export { Question } from "./Question/Question"
+export { Result } from "./Result/Result"
+export { UserProfile } from "./UserProfile/UserProfile"
+export { Dashboard } from "./Dashboard/Dashboard"
