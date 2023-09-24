@@ -41,7 +41,7 @@ $ npm start
 - React Context API + useReducer
 - React Router for routing different pages
 
-## Features 
+## Screenshots
 
 <div align="center">
   <img src="screenshots/Home-dark.png" height="400" width="800" />
